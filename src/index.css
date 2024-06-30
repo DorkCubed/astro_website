@@ -1,17 +1,6 @@
-.club-image-container {
-    position: relative;
-    overflow: hidden;
-    width: 90%;
-    height: auto;
-    border-radius: 3vw;
-}
-
-.club-image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: inherit;
-    border: 1vh solid black;
+@font-face {
+    font-family: 'Bruno Ace';
+    src: local('Bruno Ace SC'), url(./fonts/BrunoAceSC-Regular.ttf) format('truetype');
 }
 
 .align-center {
