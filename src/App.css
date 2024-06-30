@@ -40,11 +40,20 @@
 }
 
 .portrait-learn-more {
-    margin: 0px;
-    position: relative;
+    padding-top: 1vh;
+    font-size: 2vh;
+    background-color: black;
+    padding: 1vw;
+    border-radius: 4vh;
     font-family: 'Bruno Ace';
     color: white;
     text-align: center;
+}
+
+.portrait-learn-more:hover {
+    color: skyblue;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .potrait-text-container {
@@ -52,6 +61,7 @@
     margin-top: 1vh;
     font-family: 'Bruno Ace';
     color: white;
+    text-shadow: 3px 0px 0px black;
     justify-content: center;
 }
 
@@ -76,7 +86,7 @@
 
 .gallery-title {
     font-size: 8vh;
-    text-shadow: 4px 0px 0px black;
+    text-shadow: 1vh 0px 0px black;
     padding-top: 5vh;
     padding-bottom: 2vh;
     font-family: 'Bruno Ace';
