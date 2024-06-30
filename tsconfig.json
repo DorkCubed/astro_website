@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "listgroup/ListGroup.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
