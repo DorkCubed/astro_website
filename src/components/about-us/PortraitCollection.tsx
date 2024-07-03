@@ -21,6 +21,19 @@ const extended_excom = (
     </>
 );
 
+const devs = (
+    <>
+        <Picture src="/not-not-blank.png" alt="Portrait 1" name="dev 1" subtitle="did things" clicklink="https://google.com" />
+        <Picture src="/not-not-blank.png" alt="Portrait 2" name="dev 2" subtitle="did things" clicklink="https://google.com" />
+        <Picture src="/not-not-blank.png" alt="Portrait 3" name="dev 3" subtitle="did things" clicklink="https://google.com" />
+        <Picture src="/not-not-blank.png" alt="Portrait 4" name="dev 4" subtitle="did things" clicklink="https://google.com" />
+        <Picture src="/not-not-blank.png" alt="Portrait 5" name="dev 5" subtitle="did things" clicklink="https://google.com" />
+        <Picture src="/not-not-blank.png" alt="Portrait 6" name="dev 6" subtitle="did things" clicklink="https://google.com" />
+        <Picture src="/not-not-blank.png" alt="Portrait 7" name="dev 7" subtitle="did things" clicklink="https://google.com" />
+        <Picture src="/not-not-blank.png" alt="Portrait 8" name="dev 8" subtitle="did things" clicklink="https://google.com" />
+    </>
+);
+
 function PortraitCollection(props: CollenctionNumberProps) {
     return (
         <>
@@ -28,6 +41,7 @@ function PortraitCollection(props: CollenctionNumberProps) {
                 <div className="potrait-divs-container">
                     {props.number === 1 && excom}
                     {props.number === 2 && extended_excom}
+                    {props.number === 3 && devs}
                 </div>
             </div>
         </>

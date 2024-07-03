@@ -1,0 +1,116 @@
+* {
+    font-family: 'Bruno Ace';
+    color: white;
+}
+
+.bg-image {
+    background-image: url(/bg.jpg);
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.title-text {
+    font-size: 5vw;
+    font-weight: bold;
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.club-image-container {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    height: auto;
+    border-radius: 3vw;
+}
+
+.club-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    border: 1vh solid white;
+}
+
+.club-description {
+    display: flex;
+    font-size: 2.5vw;
+    margin: 5vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    text-align: center;
+    font-weight: 900;
+}
+
+.club-description p {
+    color: black;
+    text-shadow:
+        0.1vw 0.1vw 0.1vw white,
+        -0.1vw 0.1vw 0.1vw white,
+        0.1vw -0.1vw 0.1vw white,
+        -0.1vw -0.1vw 0.1vw white;
+}
+
+.gallery-title {
+    font-size: 4vw;
+    text-shadow: 0.5vw 0px 0px black;
+    padding-top: 4vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.potrait-divs-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 5vw;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    height: auto;
+    justify-content: center;
+}
+
+.potrait-images-container {
+    display: inline-block;
+    width: 25%;
+    height: auto;
+    margin: 0;
+    text-align: center;
+}
+
+.potrait-images-container img {
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    border-radius: 10vw;
+    border: 0.5vw solid white;
+}
+
+.portrait-learn-more {
+    padding-top: 1vh;
+    padding: 1vw;
+    font-size: 1vw;
+    background-color: black;
+    border-radius: 2vw;
+    text-align: center;
+}
+
+.portrait-learn-more:hover {
+    color: skyblue;
+    transition-duration: 200ms;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.potrait-text-container {
+    display: block;
+    margin-top: 1vh;
+    text-shadow: 3px 0px 0px black;
+    justify-content: center;
+}
