@@ -1,15 +1,16 @@
 import astro_logo from "/layer1.svg";
 import './Nav.css';
+import { Link } from "react-router-dom";
 function Nav() {
     return (
         <>
             <nav>
-                <a href=""><img src={astro_logo} alt="sky" /></a>
-                <a href="">ABOUT US</a>
-                <a href="">PROJECTS</a>
-                <a href="">BLOGS</a>
-                <a href="">GALLERY</a>
-                <a href="">FEST EVENTS</a>
+                <a><Link to={'/'}><img src={astro_logo} alt="sky" /></Link></a>
+                <a><Link to={'/about'}>ABOUT US</Link></a>
+                <a><Link to={'/projects'}>PROJECTS</Link></a>
+                <a><Link to={'/about'}>BLOGS</Link></a>
+                <a><Link to={'/about'}>GALLERY</Link></a>
+                <a><Link to={'/about'}>FEST EVENTS</Link></a>
             </nav>
         </>
     )

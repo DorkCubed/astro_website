@@ -13,7 +13,6 @@
 .bar-container {
     display: flex;
     width: 100%;
-    padding: 1vh;
     justify-content: center;
     align-items: center;
 }
@@ -56,8 +55,6 @@
     justify-content: center;
     padding-top: 3vw;
     padding-bottom: 0;
-    padding-left: 6vw;
-    padding-right: 6vw;
     margin: 0;
 }
 
