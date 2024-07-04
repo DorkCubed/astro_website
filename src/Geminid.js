@@ -5,9 +5,9 @@ import './Geminid.css';
 
 function Geminid(props){
     
-    const values = "--angle:"+ props.angle+";--end_x:"+props.end_x+";--end_y:"+props.end_y+";--start_x:"+props.start_x+";--start_y:"+props.start_y+";--size:"+props.size+";--opacity:"+props.opacity;
+    // const values = "--angle:"+ props.angle+";--end_x:"+props.end_x+";--end_y:"+props.end_y+";--start_x:"+props.start_x+";--start_y:"+props.start_y+";--size:"+props.size+";--opacity:"+props.opacity;
     
-    document.querySelector(":root").setAttribute("style",values);
+    // document.querySelector(":root").setAttribute("style",values);
     
     
     return(
