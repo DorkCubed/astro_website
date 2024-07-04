@@ -1,0 +1,83 @@
+*{
+    border: border-box;
+    padding: 0px;
+    margin: 0;
+    font-family: astro_font;
+}
+@font-face {
+    font-family: astro_font;
+    src: url('./assets/BrunoAceSC-Regular.ttf');
+}
+
+.block {
+    display: block;
+}
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    height: 50px;
+    position: relative;
+    z-index: 30;
+}
+nav a img,.navbar img{
+    width: 20vw;
+}
+nav a{
+    border: none;
+    background-color: none;
+    background: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    opacity: 0.8;
+    font-size: 1.2vw;
+}
+nav a:hover {
+    color: white;
+    opacity: 1;
+    text-shadow: 0px 0px 20px cyan;
+    transition-delay: 50ms;
+    transition-duration: 200ms;
+    /* box-shadow: 0px 0px 10px white; */
+    
+}
+.navbar {
+    width: calc(100% - 6vw);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    height: 50px;
+    position: relative;
+    z-index: 30;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+.svg svg {
+    opacity: 0.7;
+}
+.svg:hover svg{
+    text-shadow: 0px 0px 20px red;
+    fill: white;
+    opacity: 1;
+    filter: drop-shadow( 1px 1px 5px cyan);
+    /* box-shadow: -5px -5px 5px #888;
+-webkit-box-shadow: -5px -5px 5px #888; */
+}
+@media (max-width:800px) {
+    nav {
+        display: none;
+    }
+    
+}
+@media (min-width:800px) {
+    .navbar {
+        display: none;
+    }
+}

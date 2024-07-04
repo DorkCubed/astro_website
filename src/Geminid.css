@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+:root {
+    --angle: -20deg;
+    --end_x: 30px;
+    --end_y: 500px;
+    --start_x: 1500px;
+    --start_y: 100px;
+    --size: 3px;
+    --opacity: 0.6;
+}
+.geminid {
+    position: absolute;
+    /* top: 100px;
+    left: 0; */
+    opacity: var(--opacity);
+    animation: animate_geminid 4s linear infinite;
+
+}
+.geminid_head {
+    position: absolute;
+    height: var(--size);
+    width: var(--size);
+    background-color: white;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: -10;
+}
+
+.geminid_tail {
+    position: absolute;
+    z-index: -15;
+    left: 0;
+    top: 0;
+    height: var(--size);
+    width: calc(11*var(--size));
+    background-color: aqua;
+    border-radius: 4px 100% 100% 4px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 11%, rgba(0,243,248,1) 100%);
+
+}
+@keyframes animate_geminid {
+    0%{
+        position: absolute;
+        top: var(--start_y);
+        left: var(--start_x);
+        transform: rotate(var(--angle));
+    }
+    100%{
+        position: absolute;
+        top: var(--end_y);
+        left: var(--end_x);
+        transform: rotate(var(--angle));
+    }
+}

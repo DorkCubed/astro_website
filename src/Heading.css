@@ -1,0 +1,43 @@
+*{
+    border: border-box;
+    padding: 0px;
+    margin: 0;
+    font-family: astro_font;
+    
+}
+@font-face {
+    font-family: astro_font;
+    src: url('./assets/BrunoAceSC-Regular.ttf');
+}
+
+.heading {
+    color: white;
+    opacity: 0.9;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 9vw;
+    z-index: 30;
+
+}
+.astro_club {
+    font-size: 10vw;
+    width: 25vw;
+    text-wrap: wrap;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 8vw;
+    font-weight: 100;
+    letter-spacing: 0.3vw;
+}
+.bits_pilani {
+    width: 25vw;
+    font-size: 3vw;
+    text-align: center;
+    letter-spacing: 0.5vw;
+}
