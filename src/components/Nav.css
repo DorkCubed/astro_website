@@ -5,18 +5,47 @@
     font-family: 'Bruno Ace';
 }
 
+@media (orientation:landscape) {
+    nav a img {
+        width: 8vw;
+    }
+}
+
+@media (orientation:portrait) {
+    nav a img {
+        width: 16vh;
+    }
+}
+
 nav {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-top: 3vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
     height: 5vh;
+    font-size: 2vh;
 }
 
-nav a img {
-    width: 8vw;
+.mnav {
+    text-align: center;
+    display: grid;
+    justify-content: end;
+    align-items: start;
+    z-index: 1;
+    position: relative;
+    padding: 0;
+    padding-right: 2vw;
+    transition: opacity 150ms ease-in-out 50ms;
+}
+
+.manchor {
+    padding: 3vw;
+    border-radius: 5vw;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 nav a {
@@ -26,8 +55,23 @@ nav a {
     text-decoration: none;
     margin: 0;
     padding: 0;
+    padding-bottom: 1;
     color: white;
     opacity: 0.8;
+}
+
+nav div img {
+    width: 3vh;
+    object-fit: contain;
+    opacity: 0.7;
+}
+
+nav div img:hover {
+    cursor: pointer;
+    opacity: 1;
+    filter: drop-shadow(0px 0px 1vw cyan);
+    transition-delay: 50ms;
+    transition-duration: 200ms;
 }
 
 nav a:hover {

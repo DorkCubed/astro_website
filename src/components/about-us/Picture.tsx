@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import { useFloating, useHover, useInteractions, safePolygon, autoUpdate, FloatingArrow, arrow, offset, autoPlacement } from '@floating-ui/react';
+import { useFloating, useDismiss, useHover, useInteractions, safePolygon, autoUpdate, FloatingArrow, arrow, offset, autoPlacement } from '@floating-ui/react';
 
 interface PictureProps {
     src: string;
@@ -20,8 +20,9 @@ function Picture(props: PictureProps) {
         onOpenChange: setIsHovered,
     });
 
+    const dismiss = useDismiss(context)
     const hover = useHover(context, { handleClose: safePolygon() });
-    const { getReferenceProps, getFloatingProps } = useInteractions([hover]);
+    const { getReferenceProps, getFloatingProps } = useInteractions([hover, dismiss]);
 
     return (
         <div className="potrait-images-container">
