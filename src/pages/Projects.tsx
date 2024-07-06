@@ -1,5 +1,6 @@
 import "./projects.css";
 import Nav from "../components/Nav";
+import Shiny from "../components/projects/NewShiny";
 import { Helmet } from "react-helmet";
 
 function Projects() {
@@ -11,8 +12,11 @@ function Projects() {
 
             <div className="projects">
                 <Nav />
-                <div className="title-container">
-                    <h1> Projects </h1>
+                <div className="title-container" >
+                    <Shiny Name="Projects" Class="a" />
+                    <Shiny Name="Projects" Class="b" />
+                    <Shiny Name="Projects" Class="c" />
+                    <Shiny Name="Projects" Class="d" />
                 </div>
             </div>
         </>

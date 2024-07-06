@@ -1,20 +1,9 @@
-@media (orientation: landscape) {
-    .bar-container {
-        height: 70vh;
-    }
-}
-
-@media (orientation: portrait) {
-    .bar-container {
-        height: 70vw;
-    }
-}
-
 .bar-container {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
+    height: 70vmin;
 }
 
 .bar-bg {
