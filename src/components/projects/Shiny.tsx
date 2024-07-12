@@ -36,7 +36,7 @@ function Shiny(props: ShinyProps) {
                 transition: '0.5s, top 0s, left 0s',
             }} />
             <div className="card-overlay">
-                <img src={props.Image} alt={props.Name} />
+                <div style={{ backgroundImage: `url(${props.Image})` }} />
                 <p>{props.Name}</p>
             </div>
         </div >

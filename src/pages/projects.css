@@ -35,14 +35,6 @@
         .card {
             opacity: 0;
         }
-
-        .card-overlay img {
-            grid-row-start: 1;
-            grid-column-start: 1;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
     }
 }
 
@@ -53,18 +45,13 @@
             opacity: 1;
         }
 
-        .card-overlay img {
-            grid-row-start: 1;
-            grid-column-start: 1;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transform: translateX(-100%);
+        .card-overlay div {
+            transform: translateX(-105%);
             transition-duration: 200ms;
             transition-timing-function: ease-in-out;
         }
 
-        .card-overlay:hover img {
+        .card-overlay:hover div {
             transform: translateX(0);
         }
 
@@ -93,12 +80,12 @@
     background-repeat: no-repeat;
 
     .title-container {
+        flex-shrink: 0;
         display: grid;
         position: relative;
         overflow: hidden;
-        padding-bottom: 2.5vh;
-        height: 90%;
-        width: 80%;
+        height: 100%;
+        width: 100%;
 
 
         .card-wrapper {
@@ -138,7 +125,6 @@
             .card-overlay {
                 overflow: hidden;
                 display: grid;
-                grid-template: 1fr / 1fr;
                 place-items: center center;
                 position: relative;
                 width: 100%;
@@ -146,20 +132,38 @@
                 grid-row-start: 1;
                 grid-column-start: 1;
                 background-image: url(/projects-bg-dodge.png);
+                background-attachment: fixed;
                 background-color: black;
                 background-position: top 0px left 0px;
                 background-repeat: no-repeat;
             }
 
-            .card-overlay p {
-                word-wrap: break-word;
-                word-break: break-all;
-                text-align: center;
+            .card-overlay div {
+                flex-shrink: 0;
+                width: 100%;
+                height: 100%;
                 grid-row-start: 1;
                 grid-column-start: 1;
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .card-overlay p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                word-wrap: break-word;
+                word-break: break-all;
+                height: 100%;
+                width: 100%;
+                flex-shrink: 0;
                 position: relative;
                 z-index: 1;
                 margin: 0;
+                grid-row-start: 1;
+                grid-column-start: 1;
                 font-size: 6vmin;
             }
         }
@@ -179,5 +183,17 @@
 
     .d {
         grid-area: 2 / 3 / 4 / 4;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        width: 80%;
+        padding-bottom: 2.5vh;
+        margin: 0;
+        overflow-x: scroll;
     }
 }
