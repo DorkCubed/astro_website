@@ -1,6 +1,6 @@
 import "./projects.css";
 import Nav from "../components/Nav";
-import Shiny from "../components/projects/Shiny";
+import Cards from "../components/projects/Cards";
 import { Outlet } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
@@ -17,11 +17,11 @@ function Projects() {
                 <Nav />
                 <div className="content">
                     <Outlet />
-                    <div className="title-container" >
-                        <Shiny Name="Projects" Class="a" Image={placeholder} />
-                        <Shiny Name="Projects" Class="b" Image={placeholder} />
-                        <Shiny Name="Projects" Class="c" Image={placeholder} />
-                        <Shiny Name="Projects" Class="d" Image={placeholder} />
+                    <div className="title-container">
+                        <Cards Name="Projects" Class="a" Image={placeholder} NextPage="zenith" />
+                        <Cards Name="Projects" Class="b" Image={placeholder} NextPage="" />
+                        <Cards Name="Projects" Class="c" Image={placeholder} NextPage="" />
+                        <Cards Name="Projects" Class="d" Image={placeholder} NextPage="" />
                     </div>
                 </div>
             </div>

@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
-interface ShinyProps {
+interface CardsProps {
     Name: string;
     Class: string;
     Image: string;
+    NextPage: string;
 }
 
-function Shiny(props: ShinyProps) {
+function Cards(props: CardsProps) {
     const [cursorX, setCursorX] = useState(0);
     const [cursorY, setCursorY] = useState(0);
 
@@ -37,10 +39,10 @@ function Shiny(props: ShinyProps) {
             }} />
             <div className="card-overlay">
                 <div style={{ backgroundImage: `url(${props.Image})` }} />
-                <p>{props.Name}</p>
+                <a><Link to={props.NextPage}> {props.Name} </Link></a>
             </div>
         </div >
     );
 }
 
-export default Shiny;
+export default Cards;
