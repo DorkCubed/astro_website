@@ -7,10 +7,10 @@ function BottomBar() {
                 <div className="astro-logo" />
                 <div className="line" />
                 <div className="social-container">
-                    <div className="social-button"><img src="/insta.png" alt="instagram" /></div>
-                    <div className="social-button"><img src="/twitter.png" alt="twitter" /></div>
-                    <div className="social-button"><img src="/linkedin.png" alt="linkedin" /></div>
-                    <div className="social-button"><img src="/fb.png" alt="facebook" /></div>
+                    <div className="social-button"><img src="/Instagram.svg" alt="instagram" /></div>
+                    <div className="social-button"><img src="/twitter.svg" alt="twitter" /></div>
+                    <div className="social-button"><img src="/linkedin.svg" alt="linkedin" /></div>
+                    <div className="social-button"><img src="/fb.svg" alt="facebook" /></div>
                 </div>
             </div>
         </div>
