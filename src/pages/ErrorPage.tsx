@@ -1,31 +1,40 @@
 import { useRouteError, isRouteErrorResponse } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import "./error-page.css";
 import Nav from "../components/Nav";
 
 function ErrorPage() {
     const routererror: any = useRouteError();
-    console.error(routererror);
-
     if (isRouteErrorResponse(routererror)) {
         return (
-            <div className="error-page">
-                <Nav />
-                <div className="error-info">
-                    <h1>{routererror.status}</h1>
-                    <i>{routererror.statusText}</i>
-                    {routererror.data?.message && <i>{routererror.data.message}</i>}
+            <>
+                <Helmet>
+                    <title>Something Went Wrong</title>
+                </Helmet>
+                <div className="error-page">
+                    <Nav />
+                    <div className="error-info">
+                        <h1>{routererror.status}</h1>
+                        <i>{routererror.statusText}</i>
+                        {routererror.data?.message && <i>{routererror.data.message}</i>}
+                    </div>
                 </div>
-            </div>
+            </>
         );
     } else {
         return (
-            <div className="error-page">
-                <Nav />
-                <div className="error-info">
-                    <h1>400</h1>
-                    <i>Bad Request</i>
+            <>
+                <Helmet>
+                    <title>Something Went Wrong</title>
+                </Helmet>
+                <div className="error-page">
+                    <Nav />
+                    <div className="error-info">
+                        <h1>400</h1>
+                        <i>Bad Request</i>
+                    </div>
                 </div>
-            </div>
+            </>
         );
     }
 }

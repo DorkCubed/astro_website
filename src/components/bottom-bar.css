@@ -1,75 +1,75 @@
-.bar-container {
+.bottom-bar-container {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     height: 70vmin;
-}
 
-.bar-bg {
-    background-color: black;
-    width: 97%;
-    height: 94%;
-    display: grid;
-    align-items: center;
-    place-items: center;
-    font-family: 'Bruno Ace';
-    color: white;
-    font-size: 2vh;
-}
+    .bar-bg {
+        background-color: black;
+        width: 97%;
+        height: 94%;
+        display: grid;
+        align-items: center;
+        place-items: center;
+        font-family: 'Bruno Ace';
+        color: white;
+        font-size: 2vh;
+    }
 
-.astro-logo {
-    display: flex;
-    padding: 7vw;
-    background-image: url(/club_logo.svg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 75%;
-    width: 30vw;
-    opacity: 0.7;
-}
+    .astro-logo {
+        display: flex;
+        padding: 7vw;
+        background-image: url(/club_logo.svg);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 75%;
+        width: 30vw;
+        opacity: 0.7;
+    }
 
-.astro-logo:hover {
-    opacity: 1;
-    cursor: pointer;
-    transition-delay: 50ms;
-    transition-duration: 200ms;
-}
+    .astro-logo:hover {
+        opacity: 1;
+        cursor: pointer;
+        transition-delay: 50ms;
+        transition-duration: 200ms;
+    }
 
-.social-container {
-    display: flex;
-    width: inherit;
-    height: inherit;
-    justify-content: center;
-    padding-top: 3vw;
-    padding-bottom: 0;
-    margin: 0;
-}
+    .social-container {
+        display: flex;
+        width: inherit;
+        height: inherit;
+        justify-content: center;
+        padding-top: 3vw;
+        padding-bottom: 0;
+        margin: 0;
+    }
 
-.social-button {
-    display: inline-block;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-}
+    .social-button {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
 
-.social-button img {
-    opacity: 0.7;
-    object-fit: contain;
-    width: 40%;
-    height: 40%;
-}
+    .social-button img {
+        opacity: 0.7;
+        object-fit: contain;
+        width: 40%;
+        height: 40%;
+    }
 
-.social-button img:hover {
-    opacity: 1;
-    cursor: pointer;
-    transition-delay: 50ms;
-    transition-duration: 200ms;
-}
+    .social-button img:hover {
+        opacity: 1;
+        cursor: pointer;
+        transition-delay: 50ms;
+        transition-duration: 200ms;
+    }
 
-.line {
-    align-items: center;
-    border: 2px solid white;
-    width: 85%;
+    .line {
+        align-items: center;
+        border: 2px solid white;
+        width: 85%;
+    }
 }

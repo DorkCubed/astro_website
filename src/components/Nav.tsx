@@ -7,12 +7,12 @@ import hamburger from "/hamburger.svg";
 
 const DesktopNavBar = (
     <nav>
-        <a><Link to={'/'}><img src={astro_logo} alt="sky" /></Link></a>
-        <a><Link to={'/about'}>ABOUT US</Link></a>
-        <a><Link to={'/projects'}>PROJECTS</Link></a>
-        <a><Link to={'/about'}>BLOGS</Link></a>
-        <a><Link to={'/about'}>GALLERY</Link></a>
-        <a><Link to={'/about'}>FEST EVENTS</Link></a>
+        <a><Link reloadDocument={true} to={'/'}><img src={astro_logo} alt="sky" /></Link></a>
+        <a><Link reloadDocument={true} to={'/about'}>ABOUT US</Link></a>
+        <a><Link reloadDocument={true} to={'/projects'}>PROJECTS</Link></a>
+        <a><Link reloadDocument={true} to={'/blogs'}>BLOGS</Link></a>
+        <a><Link reloadDocument={true} to={'/gallery'}>GALLERY</Link></a>
+        <a><Link reloadDocument={true} to={'/events'}>FEST EVENTS</Link></a>
     </nav>
 )
 
@@ -47,7 +47,7 @@ function Nav() {
         <>
             <nav ref={refs.setReference}>
                 <a {...getReferenceProps()}>
-                    <Link to={'/'}><img src={astro_logo} alt="sky" /></Link>
+                    <Link reloadDocument={true} to={'/'}><img src={astro_logo} alt="sky" /></Link>
                 </a>
                 <div onClick={() => setIsOpen(!isOpen)}>
                     <img src={hamburger} alt="menu" />
@@ -59,11 +59,11 @@ function Nav() {
                     style={floatingStyles}
                     {...getFloatingProps()}>
                     <div className="manchor mnav" style={{ ...styles }}>
-                        <a><Link to={'/about'}>ABOUT US</Link></a>
-                        <a><Link to={'/projects'}>PROJECTS</Link></a>
-                        <a><Link to={'/about'}>BLOGS</Link></a>
-                        <a><Link to={'/about'}>GALLERY</Link></a>
-                        <a><Link to={'/about'}>FEST EVENTS</Link></a>
+                        <a><Link reloadDocument={true} to={'/about'}>ABOUT US</Link></a>
+                        <a><Link reloadDocument={true} to={'/projects'}>PROJECTS</Link></a>
+                        <a><Link reloadDocument={true} to={'/blogs'}>BLOGS</Link></a>
+                        <a><Link reloadDocument={true} to={'/gallery'}>GALLERY</Link></a>
+                        <a><Link reloadDocument={true} to={'/events'}>FEST EVENTS</Link></a>
                     </div>
                 </nav>
             }
