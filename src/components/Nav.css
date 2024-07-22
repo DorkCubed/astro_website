@@ -2,7 +2,6 @@
     border: border-box;
     padding: 0px;
     margin: 0;
-    font-family: 'Bruno Ace';
 }
 
 @media (orientation:landscape) {
@@ -18,6 +17,7 @@
 }
 
 nav {
+    font-family: 'Bruno Ace';
     width: 100%;
     display: flex;
     flex-direction: row;

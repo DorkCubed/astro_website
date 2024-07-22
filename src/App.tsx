@@ -1,14 +1,15 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
 import Projects from "./pages/Projects.tsx";
-import Nav from "./components/Nav";
 import Zenith from "./components/projects/Zenith";
+import Nav from "./components/Nav";
+import ErrorPage from "./pages/ErrorPage.tsx";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <><Nav /><h1> Landing </h1></>,
-        errorElement: <h1> Error </h1>,
+        errorElement: <ErrorPage />,
     },
     { path: "/about", element: <AboutUs /> },
     {

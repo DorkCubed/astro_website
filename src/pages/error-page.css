@@ -1,0 +1,38 @@
+.error-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    flex-shrink: none;
+    background-image: url(/error-bg.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .error-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        color: white;
+        font-size: 5vw;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Rubik Glitch';
+        text-transform: uppercase;
+        text-shadow: 0.5vw 0vw 0vw red, -0.5vw 0vw 0vw blue;
+    }
+
+    .error-info h1 {
+        font-size: 20vw;
+        margin: none;
+    }
+
+    .error-info i {
+        font-size: 10vw;
+    }
+}
