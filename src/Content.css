@@ -1,0 +1,52 @@
+@media only screen and (min-width:1025px){
+    .container{
+        text-align: center;
+    }
+    
+    .content{
+        position: relative;
+        font-size: 1.5em;
+        word-spacing: 0.5em;
+        margin: 1rem;
+        background-color: rgba(0, 0, 0, 0.35);
+        border-radius: 4em;
+        padding: 3em;
+        height: 85%;
+      }
+      .container{
+        font-family: "Bruno Ace SC";
+        width: 80%;
+        height: 250vh;
+        display: flex;
+        margin: auto;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+}
+
+@media only screen and (max-width:1024px){
+   
+    .content{
+        position: relative;
+        font-size: 1em;
+        word-spacing: 0.5em;
+        margin: 0.5rem;
+        background-color: rgba(0, 0, 0, 0.35);
+        border-radius: 4em;
+        padding: 2em;
+        height: 85%;
+      }
+      .container{
+        text-align: center;
+        font-family: "Bruno Ace SC";
+        width: 95%;
+        height: 250vh;
+        display: flex;
+        margin: auto;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+      }
+}

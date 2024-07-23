@@ -1,0 +1,34 @@
+@media only screen and (min-width:250px) and (max-width: 1023px){
+    .navigation{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 1024px){
+    .navigation li a{
+        color: white;
+        text-decoration: none;
+      }
+      
+      .navigation li a:hover{
+        color: cyan;
+      }
+      
+      .navigation{
+        display: flex;
+        font-size: 1.25rem;
+        justify-content: space-around;
+        list-style: none;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0.2em 0.2em ;
+      }
+      
+      .navigation li img{
+        width: 12rem;
+      }
+        
+}
+
+

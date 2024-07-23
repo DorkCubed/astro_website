@@ -1,0 +1,17 @@
+.bruno-ace-sc-regular {
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Bruno Ace SC";
+  color: white;
+  background-color: black;
+  background: url("D:\BITS Pilani\Clubs\Astro\webpage\src\assets\blue-clouds-space-nebula-cosmic-art 2.png") no-repeat top center/cover ;
+  max-width: 100%;
+  height: auto;
+}
+
