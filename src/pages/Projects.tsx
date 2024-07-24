@@ -18,10 +18,10 @@ function Projects() {
                 <div className="content">
                     <Outlet />
                     <div className="title-container">
-                        <Cards Name="Projects" Class="a" Image={placeholder} NextPage="zenith" />
-                        <Cards Name="Projects" Class="b" Image={placeholder} NextPage="" />
-                        <Cards Name="Projects" Class="c" Image={placeholder} NextPage="" />
-                        <Cards Name="Projects" Class="d" Image={placeholder} NextPage="" />
+                        <Cards Name="PROJECTS" Class="a" Image={placeholder} NextPage="zenith" />
+                        <Cards Name="ZENITH" Class="b" Image={placeholder} NextPage="" />
+                        <Cards Name="JWST IMAGE PROCESSING" Class="c" Image={placeholder} NextPage="" />
+                        <Cards Name="COMING SOON..." Class="d" Image={placeholder} NextPage="" />
                     </div>
                 </div>
             </div>

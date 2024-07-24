@@ -1,0 +1,517 @@
+.blogs {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Bruno Ace SC";
+  color: white;
+  background-color: black;
+  background: url("blue-clouds-space-nebula-cosmic-art 2.png") no-repeat top
+    center/cover;
+  max-width: 100%;
+  height: auto;
+  scrollbar-width: none;
+
+  .navigation li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .navigation li a:hover {
+    color: cyan;
+  }
+
+  .navigation {
+    display: flex;
+    font-size: 1.25rem;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.2em 0.2em;
+  }
+
+  .navigation li img {
+    width: 12rem;
+  }
+
+  .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 14vh;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 7.875vw;
+    margin: 0.4rem;
+  }
+
+  .fermicontainer {
+    position: absolute;
+    width: 94.11%;
+    height: 120vw;
+    display: flex;
+    margin: auto;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.35);
+    top: 35vh;
+    left: 2.92vw;
+    border-radius: 5.21vw;
+    padding: 4vh 0 0 0;
+  }
+
+  button {
+    width: 4.11vw;
+    height: 4.11vw;
+    border-radius: 0px;
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  div.leftbutton {
+    width: 4.11vw;
+    height: 4.11vw;
+    position: absolute;
+    left: 8.125vw;
+    top: 40.74vh;
+  }
+
+  div.rightbutton {
+    width: 4.11vw;
+    height: 4.11vw;
+    position: absolute;
+    right: 8.125vw;
+    top: 40.74vh;
+  }
+
+  h2.blogtitle {
+    font-size: 5vw;
+    margin: 0;
+    letter-spacing: 0.25vw;
+  }
+
+  h3.subtitle {
+    font-size: 3vw;
+    margin: 0;
+    text-align: center;
+    margin-top: 0.5vh;
+    letter-spacing: 0.15vw;
+  }
+
+  p.fermi {
+    font-size: 1.665vw;
+    position: absolute;
+    top: 20vh;
+    right: 2.25vw;
+  }
+  p.alonefermi {
+    font-size: 0.625vw;
+    position: absolute;
+    top: 25.5vh;
+    right: 2.25vw;
+  }
+
+  p.content {
+    font-size: 0.955vw;
+    text-align: justify;
+    width: 89.74vw;
+    position: absolute;
+    top: 27.5vh;
+  }
+  ul.greatfilters {
+    margin: 0;
+    padding-left: 1.05vw;
+  }
+}
+
+/* To whoever is going through this, im sorry */
+
+/* || LAPTOP LANDSCAPE MEDIA QUERIES */
+
+@media screen and (min-width: 1801px) {
+  /*above 1800 px*/
+  .blogs {
+    .fermicontainer {
+      height: 120vw;
+    }
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .blogs {
+    .fermicontainer {
+      height: 115vw;
+    }
+    .title-container {
+      top: 16vh;
+    }
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  /* between 1600px and 1700px */
+  .blogs {
+    .fermicontainer {
+      height: 115vw;
+    }
+    .title-container {
+      top: 18vh;
+    }
+    p.content {
+      font-size: 0.87vw;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  /* between 1500px and 1600px */
+  .blogs {
+    .title {
+      font-size: 7.5vw;
+    }
+    .fermicontainer {
+      height: 107.5vw;
+    }
+    .title-container {
+      top: 18vh;
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  /* between 1400px and 1500px */
+  .blogs {
+    .title {
+      font-size: 7vw;
+    }
+    .fermicontainer {
+      height: 108vw;
+    }
+    .title-container {
+      top: 18vh;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  /* between 1300px and 1400px */
+  .blogs {
+    .title {
+      font-size: 6vw;
+    }
+    .fermicontainer {
+      height: 108vw;
+    }
+    .title-container {
+      top: 18vh;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  /* between 1300px and 1400px */
+  .blogs {
+    .title {
+      font-size: 6vw;
+    }
+    .fermicontainer {
+      height: 108vw;
+    }
+    .title-container {
+      top: 18vh;
+    }
+  }
+}
+
+/* || PHONE PORTRAIT MEDIA QUERIES */
+
+@media screen and (max-width: 500px) and (min-aspect-ratio: 1/5) and (max-aspect-ratio: 4/5) {
+  .blogs {
+    background: url("blue-clouds-space-nebula-cosmic-art 2.png") no-repeat top
+      center;
+
+    .title {
+      font-size: 7vw;
+    }
+    .title-container {
+      top: 5vh;
+    }
+    .fermicontainer {
+      height: 485vw;
+      width: 93.75vw;
+      top: 12vh;
+      left: 3.33vw;
+    }
+    p.fermi {
+      top: 10vh;
+    }
+    p.alonefermi {
+      top: 12vh;
+    }
+    p.content {
+      top: 13vh;
+      width: 86.709vw;
+      left: 3.33vw;
+      font-size: 2.5vw;
+    }
+    ul.greatfilters {
+      padding-left: 3vw;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) and (min-aspect-ratio: 1/5) and (max-aspect-ratio: 4/5) {
+  .blogs {
+    background: url("blue-clouds-space-nebula-cosmic-art 2.png") no-repeat top
+      center;
+
+    .title {
+      font-size: 7vw;
+    }
+    .title-container {
+      top: 5vh;
+    }
+    .fermicontainer {
+      height: 500vw;
+      width: 93.75vw;
+      top: 12vh;
+      left: 3.33vw;
+    }
+    p.fermi {
+      top: 10vh;
+    }
+    p.alonefermi {
+      top: 12vh;
+    }
+    p.content {
+      top: 13vh;
+      width: 86.709vw;
+      left: 3.33vw;
+      font-size: 2.5vw;
+    }
+    ul.greatfilters {
+      padding-left: 3vw;
+    }
+  }
+}
+
+/* || PHONE LANDSCAPE MDEDIA QUERIES */
+
+@media screen and (max-width: 1000px) and (min-aspect-ratio: 5/4) {
+  .blogs {
+    .title {
+      font-size: 6vw;
+    }
+    .fermicontainer {
+      height: 112vw;
+    }
+    .title-container {
+      top: 18vh;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) and (min-aspect-ratio: 5/4) {
+  /* bw 850px & 900px in length */
+  .blogs {
+    .title {
+      font-size: 6vw;
+    }
+    .fermicontainer {
+      height: 100vw;
+    }
+    .title-container {
+      top: 18vh;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) and (min-aspect-ratio: 5/4) {
+  /* bw 800px & 850px in length */
+  .blogs {
+    .title {
+      font-size: 6vw;
+    }
+    .fermicontainer {
+      height: 105vw;
+    }
+    .title-container {
+      top: 18vh;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) and (min-aspect-ratio: 5/4) {
+  /* bw 700px & 800px in length */
+  .blogs {
+    .title {
+      font-size: 6vw;
+    }
+    .fermicontainer {
+      height: 110vw;
+    }
+    .title-container {
+      top: 18vh;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) and (min-aspect-ratio: 5/4) {
+  .blogs {
+    /* under 700px in length */
+    .title {
+      font-size: 6vw;
+    }
+    .fermicontainer {
+      height: 110vw;
+    }
+    .title-container {
+      top: 18vh;
+    }
+  }
+}
+
+/* || TABLET LANDSCAPE MEDIA QUERIES */
+
+@media screen and (min-width: 1024px) and (max-width: 1112px) and (orientation: landscape) {
+  .blogs {
+    /* IPAD MINI */
+    .title-container {
+      top: 14vh;
+    }
+    .fermicontainer {
+      top: 20vw;
+      height: 116vw;
+    }
+    p.fermi {
+      top: 12vw;
+    }
+    p.alonefermi {
+      top: 15vw;
+    }
+    p.content {
+      top: 16vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1700px) and (max-width: 1750px) and (orientation: landscape) {
+  /* IPAD PRO */
+  .blogs {
+    .title-container {
+      top: 10vh;
+    }
+    .fermicontainer {
+      top: 18vw;
+      height: 121vw;
+    }
+    p.fermi {
+      top: 12vw;
+    }
+    p.alonefermi {
+      top: 15vw;
+    }
+    p.content {
+      top: 16vw;
+    }
+  }
+}
+
+/* || TABLET PORTRAIT MEDIA QUERIES */
+
+@media screen and (min-width: 768px) and (max-width: 834px) and (orientation: portrait) {
+  /* IPAD MINI */
+  .blogs {
+    .title-container {
+      top: 7.5vh;
+    }
+    .fermicontainer {
+      padding-top: 3vw;
+      top: 20vw;
+      height: 116vw;
+    }
+    p.fermi {
+      top: 12vw;
+    }
+    p.alonefermi {
+      top: 15vw;
+    }
+    p.content {
+      top: 18vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1030px) and (orientation: portrait) {
+  /* IPAD AIR */
+  .blogs {
+    .title-container {
+      top: 7.5vh;
+    }
+    .fermicontainer {
+      padding-top: 3vw;
+      top: 20vw;
+      height: 115vw;
+    }
+    p.fermi {
+      top: 12vw;
+    }
+    p.alonefermi {
+      top: 15vw;
+    }
+    p.content {
+      top: 18vw;
+      font-size: 0.96vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1030px) and (orientation: portrait) {
+  /* IPAD PRO */
+  .blogs {
+    .title-container {
+      top: 7.5vh;
+    }
+    .fermicontainer {
+      padding-top: 3vw;
+      top: 20vw;
+      height: 116vw;
+    }
+    p.fermi {
+      top: 12vw;
+    }
+    p.alonefermi {
+      top: 15vw;
+    }
+    p.content {
+      top: 18vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) and (orientation: portrait) {
+  /* IPAD AIR */
+  .blogs {
+    .title-container {
+      top: 7.5vh;
+    }
+    .fermicontainer {
+      padding-top: 3vw;
+      top: 18vw;
+      height: 120vw;
+    }
+    p.fermi {
+      top: 12vw;
+    }
+    p.alonefermi {
+      top: 15vw;
+    }
+    p.content {
+      top: 16vw;
+      font-size: 0.96vw;
+    }
+  }
+}
