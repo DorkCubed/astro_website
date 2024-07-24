@@ -1,5 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
+import Blogs from "./pages/Blogs.tsx";
+import FestEvents from "./pages/FestEvents.tsx";
 import Projects from "./pages/Projects.tsx";
 import Zenith from "./components/projects/Zenith";
 import Nav from "./components/Nav";
@@ -16,6 +18,8 @@ const router = createBrowserRouter([
         path: "/projects", element: <Projects />,
         children: [{ path: "zenith", element: <Zenith /> }]
     },
+    { path: "/blogs", element: <Blogs /> },
+    { path: "/events", element: <FestEvents /> },
 ]);
 
 function App() {

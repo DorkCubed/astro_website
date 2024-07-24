@@ -1,37 +1,17 @@
 .blogs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   margin: 0px;
   padding: 0px;
-  font-family: "Bruno Ace SC";
+  font-family: "Bruno Ace";
   color: white;
   background-color: black;
-  background: url("blue-clouds-space-nebula-cosmic-art 2.png") no-repeat top
-    center/cover;
-  max-width: 100%;
-  height: auto;
-  scrollbar-width: none;
-
-  .navigation li a {
-    color: white;
-    text-decoration: none;
-  }
-
-  .navigation li a:hover {
-    color: cyan;
-  }
-
-  .navigation {
-    display: flex;
-    font-size: 1.25rem;
-    justify-content: space-around;
-    list-style: none;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0.2em 0.2em;
-  }
-
-  .navigation li img {
-    width: 12rem;
-  }
+  background: url(/blogs-bg.jpg) no-repeat top center/cover;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
 
   .title-container {
     display: flex;
@@ -50,17 +30,19 @@
   .fermicontainer {
     position: absolute;
     width: 94.11%;
-    height: 120vw;
+    height: 82vh;
     display: flex;
     margin: auto;
     padding: 1rem;
+    margin-top: 10vh;
     flex-direction: column;
+    flex-shrink: none;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.35);
-    top: 35vh;
-    left: 2.92vw;
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5.21vw;
     padding: 4vh 0 0 0;
+    overflow-y: auto;
+    scrollbar-width: none;
   }
 
   button {
@@ -94,8 +76,10 @@
   }
 
   h3.subtitle {
+    position: relative;
     font-size: 3vw;
     margin: 0;
+    left: -14.5vw;
     text-align: center;
     margin-top: 0.5vh;
     letter-spacing: 0.15vw;
@@ -117,10 +101,12 @@
   p.content {
     font-size: 0.955vw;
     text-align: justify;
+    padding-bottom: 4vh;
     width: 89.74vw;
     position: absolute;
     top: 27.5vh;
   }
+
   ul.greatfilters {
     margin: 0;
     padding-left: 1.05vw;
@@ -131,20 +117,8 @@
 
 /* || LAPTOP LANDSCAPE MEDIA QUERIES */
 
-@media screen and (min-width: 1801px) {
-  /*above 1800 px*/
-  .blogs {
-    .fermicontainer {
-      height: 120vw;
-    }
-  }
-}
-
 @media screen and (max-width: 1800px) {
   .blogs {
-    .fermicontainer {
-      height: 115vw;
-    }
     .title-container {
       top: 16vh;
     }
@@ -154,9 +128,6 @@
 @media screen and (max-width: 1700px) {
   /* between 1600px and 1700px */
   .blogs {
-    .fermicontainer {
-      height: 115vw;
-    }
     .title-container {
       top: 18vh;
     }
@@ -172,9 +143,6 @@
     .title {
       font-size: 7.5vw;
     }
-    .fermicontainer {
-      height: 107.5vw;
-    }
     .title-container {
       top: 18vh;
     }
@@ -187,9 +155,6 @@
     .title {
       font-size: 7vw;
     }
-    .fermicontainer {
-      height: 108vw;
-    }
     .title-container {
       top: 18vh;
     }
@@ -202,9 +167,6 @@
     .title {
       font-size: 6vw;
     }
-    .fermicontainer {
-      height: 108vw;
-    }
     .title-container {
       top: 18vh;
     }
@@ -216,9 +178,6 @@
   .blogs {
     .title {
       font-size: 6vw;
-    }
-    .fermicontainer {
-      height: 108vw;
     }
     .title-container {
       top: 18vh;
@@ -230,8 +189,7 @@
 
 @media screen and (max-width: 500px) and (min-aspect-ratio: 1/5) and (max-aspect-ratio: 4/5) {
   .blogs {
-    background: url("blue-clouds-space-nebula-cosmic-art 2.png") no-repeat top
-      center;
+    background: url(/blogs-bg.jpg) no-repeat top center;
 
     .title {
       font-size: 7vw;
@@ -240,10 +198,7 @@
       top: 5vh;
     }
     .fermicontainer {
-      height: 485vw;
       width: 93.75vw;
-      top: 12vh;
-      left: 3.33vw;
     }
     p.fermi {
       top: 10vh;
@@ -254,7 +209,6 @@
     p.content {
       top: 13vh;
       width: 86.709vw;
-      left: 3.33vw;
       font-size: 2.5vw;
     }
     ul.greatfilters {
@@ -265,8 +219,7 @@
 
 @media screen and (max-width: 400px) and (min-aspect-ratio: 1/5) and (max-aspect-ratio: 4/5) {
   .blogs {
-    background: url("blue-clouds-space-nebula-cosmic-art 2.png") no-repeat top
-      center;
+    background: url(/blogs-bg.jpg) no-repeat top center;
 
     .title {
       font-size: 7vw;
@@ -275,10 +228,7 @@
       top: 5vh;
     }
     .fermicontainer {
-      height: 500vw;
       width: 93.75vw;
-      top: 12vh;
-      left: 3.33vw;
     }
     p.fermi {
       top: 10vh;
@@ -289,7 +239,6 @@
     p.content {
       top: 13vh;
       width: 86.709vw;
-      left: 3.33vw;
       font-size: 2.5vw;
     }
     ul.greatfilters {
@@ -305,9 +254,6 @@
     .title {
       font-size: 6vw;
     }
-    .fermicontainer {
-      height: 112vw;
-    }
     .title-container {
       top: 18vh;
     }
@@ -319,9 +265,6 @@
   .blogs {
     .title {
       font-size: 6vw;
-    }
-    .fermicontainer {
-      height: 100vw;
     }
     .title-container {
       top: 18vh;
@@ -335,9 +278,6 @@
     .title {
       font-size: 6vw;
     }
-    .fermicontainer {
-      height: 105vw;
-    }
     .title-container {
       top: 18vh;
     }
@@ -350,9 +290,6 @@
     .title {
       font-size: 6vw;
     }
-    .fermicontainer {
-      height: 110vw;
-    }
     .title-container {
       top: 18vh;
     }
@@ -364,9 +301,6 @@
     /* under 700px in length */
     .title {
       font-size: 6vw;
-    }
-    .fermicontainer {
-      height: 110vw;
     }
     .title-container {
       top: 18vh;
@@ -381,10 +315,6 @@
     /* IPAD MINI */
     .title-container {
       top: 14vh;
-    }
-    .fermicontainer {
-      top: 20vw;
-      height: 116vw;
     }
     p.fermi {
       top: 12vw;
@@ -403,10 +333,6 @@
   .blogs {
     .title-container {
       top: 10vh;
-    }
-    .fermicontainer {
-      top: 18vw;
-      height: 121vw;
     }
     p.fermi {
       top: 12vw;
@@ -428,11 +354,6 @@
     .title-container {
       top: 7.5vh;
     }
-    .fermicontainer {
-      padding-top: 3vw;
-      top: 20vw;
-      height: 116vw;
-    }
     p.fermi {
       top: 12vw;
     }
@@ -453,8 +374,6 @@
     }
     .fermicontainer {
       padding-top: 3vw;
-      top: 20vw;
-      height: 115vw;
     }
     p.fermi {
       top: 12vw;
@@ -477,8 +396,6 @@
     }
     .fermicontainer {
       padding-top: 3vw;
-      top: 20vw;
-      height: 116vw;
     }
     p.fermi {
       top: 12vw;
@@ -500,8 +417,6 @@
     }
     .fermicontainer {
       padding-top: 3vw;
-      top: 18vw;
-      height: 120vw;
     }
     p.fermi {
       top: 12vw;

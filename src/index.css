@@ -1,14 +1,22 @@
 @font-face {
-    font-family: 'Bruno Ace';
-    src: local('Bruno Ace SC'), url(./fonts/BrunoAceSC-Regular.ttf) format('truetype');
+  font-family: "Bruno Ace";
+  src: local("Bruno Ace SC Regular"),
+    url(./fonts/BrunoAceSC-Regular.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: 'Rubik Glitch';
-    src: local('Rubik Glitch Regular'), url(./fonts/RubikGlitch-Regular.ttf) format('truetype');
+  font-family: "Rubik Glitch";
+  src: local("Rubik Glitch Regular"),
+    url(./fonts/RubikGlitch-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "League Gothic";
+  src: local("League Gothic"),
+    url(./fonts/LeagueGothic-Regular.ttf) format("truetype");
 }
 
 .align-center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
