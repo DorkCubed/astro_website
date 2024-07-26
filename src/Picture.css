@@ -10,12 +10,25 @@
     width: 100%;
     background-color: grey;
     text-align: center;
-    height: 15vw;
+    height: 17vw;
     overflow: hidden;
 }
 .picture img {
-    height: 15vw;
+    height: 100%;
 }
 .tilt {
     background-color: grey;
+}
+@media (max-width:600px) {
+    .picture{
+        height: 25vw;
+    }
+    
+}
+
+@media (max-width:400px) {
+    .picture{
+        height: 30vw;
+    }
+    
 }

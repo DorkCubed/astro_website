@@ -13,12 +13,12 @@
 .pictures {
     position: relative;
     padding-top: 13vw;
-    width: calc(100% - 2vw);
+    width: calc(100% - 3vw);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1vw;
+    gap: 1.5vw;
     row-gap: 1vw;
-    margin: 1vw;
+    margin: 1.5vw;
 }
 .next {
     background-image: url(./assets/rightbutton.png);
@@ -27,8 +27,8 @@
     background-image: url(./assets/leftbutton.png);
 }
 .next,.back {
-    width: 60px;
-    height: 60px;
+    width: 6vw;
+    height: 6vw;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -53,5 +53,29 @@
     opacity: 1;
     box-shadow: 0vw 0vw 7vw rgb(194, 193, 193);
     transition-delay: 100ms;
+    
+}
+
+@media (max-width:600px) {
+    .pictures {
+        grid-template-columns: 1fr 1fr;
+        padding-top: 8vw;
+        width: calc(100% - 3vw);
+    }
+    .next,.back {
+        height: 10vw;
+        width: 10vw;
+    }
+    
+}
+
+@media (max-width:400px) {
+    .pictures {
+        grid-template-columns: 1fr;
+        padding-top: 8vw;
+        margin: 0 5vw;
+        width: calc(100% - 10vw);
+        gap: 3vw;
+    }
     
 }
