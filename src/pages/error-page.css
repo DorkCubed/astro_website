@@ -1,38 +1,67 @@
 .error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  flex-shrink: none;
+  background-image: url(/error-bg.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Digital Numbers";
+  text-transform: uppercase;
+
+  .error-info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
-    flex-shrink: none;
-    background-image: url(/error-bg.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 5vmax;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0.3vmax 0px 1vmax cornsilk, -0.3vmax 0px 1vmax cyan;
 
-    .error-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        color: white;
-        font-size: 5vw;
-        font-weight: bold;
-        text-align: center;
-        font-family: 'Rubik Glitch';
-        text-transform: uppercase;
-        text-shadow: 0.5vw 0vw 0vw red, -0.5vw 0vw 0vw blue;
+    h2 {
+      padding: 5vmax;
+      padding-bottom: 0;
+      font-size: 7vmax;
     }
 
-    .error-info h1 {
-        font-size: 20vw;
+    .error-box {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+
+      h1 {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        font-size: 15vmax;
         margin: none;
+        transition-duration: 200ms;
+      }
+
+      i {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        font-size: 5vmax;
+        opacity: 0;
+        transition-duration: 200ms;
+      }
     }
 
-    .error-info i {
-        font-size: 10vw;
+    .error-box:hover {
+      h1 {
+        opacity: 0;
+      }
+
+      i {
+        opacity: 1;
+      }
     }
+  }
 }

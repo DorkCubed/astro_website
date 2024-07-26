@@ -14,9 +14,12 @@ function ErrorPage() {
                 <div className="error-page">
                     <Nav />
                     <div className="error-info">
-                        <h1>{routererror.status}</h1>
-                        <i>{routererror.statusText}</i>
-                        {routererror.data?.message && <i>{routererror.data.message}</i>}
+                        <div className="error-box">
+                            <h1>{routererror.status}</h1>
+                            <i>{routererror.statusText}</i>
+                            {routererror.data?.message && <i>{routererror.data.message}</i>}
+                        </div>
+                        <h2>houston, we have a problem</h2>
                     </div>
                 </div>
             </>
@@ -30,8 +33,11 @@ function ErrorPage() {
                 <div className="error-page">
                     <Nav />
                     <div className="error-info">
-                        <h1>400</h1>
-                        <i>Bad Request</i>
+                        <div className="error-box">
+                            <h1>400</h1>
+                            <i>Bad request</i>
+                        </div>
+                        <h2>houston, we have a problem</h2>
                     </div>
                 </div>
             </>
