@@ -5,9 +5,9 @@
 }
 
 @font-face {
-  font-family: "Rubik Glitch";
-  src: local("Rubik Glitch Regular"),
-    url(./fonts/RubikGlitch-Regular.ttf) format("truetype");
+  font-family: "Digital Numbers";
+  src: local("Digital Numbers"),
+    url(./fonts/DigitalNumbers-Regular.ttf) format("truetype");
 }
 
 @font-face {

@@ -1,0 +1,106 @@
+.stars {
+  grid-area: 1 / 1 / 4 / 2;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  clip-path: border-box;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  .stars1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    width: 200vw;
+    height: 200vh;
+    background: url(/stars/stars1.png);
+    animation: animStar 200s linear infinite,
+      twinkle1 0.4s ease alternate infinite;
+    z-index: 1;
+  }
+
+  .stars2 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    width: 200vw;
+    height: 200vh;
+    background: url(/stars/stars2.png);
+    animation: animStar 200s linear infinite,
+      twinkle1 0.4s ease alternate infinite;
+    z-index: 1;
+  }
+
+  .stars3 {
+    transform: translateY(-100%);
+    grid-row-start: 1;
+    grid-column-start: 1;
+    width: 200vw;
+    height: 200vh;
+    background: url(/stars/stars3.png);
+    animation: animStar 400s linear infinite,
+      twinkle1 0.6s ease alternate infinite;
+    z-index: 1;
+  }
+
+  .stars4 {
+    rotate: 180deg;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    width: 200vw;
+    height: 200vh;
+    background: url(/stars/stars4.png);
+    animation: twinkle4 0.8s ease alternate infinite;
+    z-index: 1;
+  }
+}
+@keyframes animStar {
+  from {
+    transform-origin: bottom right;
+    transform: translateY(-75vh) translateX(0px) rotate(0deg);
+  }
+
+  to {
+    transform-origin: bottom right;
+    transform: translateY(0px) translateX(-75vw) rotate(20deg);
+  }
+}
+
+@keyframes twinkle1 {
+  from {
+    opacity: 0.7;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes twinkle2 {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.8;
+  }
+}
+
+@keyframes twinkle3 {
+  from {
+    opacity: 0.9;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes twinkle4 {
+  from {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 0.5;
+  }
+}

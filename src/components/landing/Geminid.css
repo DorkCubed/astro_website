@@ -1,0 +1,68 @@
+.geminid {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  --size: 3px;
+  position: absolute;
+  opacity: 0;
+
+  animation-name: animate_geminid;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  .geminid_head {
+    position: absolute;
+    height: var(--size);
+    width: var(--size);
+    background-color: white;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: -10;
+  }
+
+  .geminid_tail {
+    position: absolute;
+    z-index: -15;
+    left: 0;
+    top: 0;
+    height: var(--size);
+    width: calc(11 * var(--size));
+    background-color: aqua;
+    border-radius: 4px 100% 100% 4px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 11%,
+      rgba(0, 243, 248, 1) 100%
+    );
+  }
+}
+@keyframes animate_geminid {
+  0% {
+    opacity: 0;
+    position: absolute;
+    top: 20vh;
+    left: 93vw;
+  }
+  50% {
+    opacity: 0;
+    position: absolute;
+    top: 20vh;
+    left: 93vw;
+  }
+  55% {
+    opacity: 0.9;
+  }
+  95% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.1;
+    position: absolute;
+    top: 75vh;
+    left: 1vw;
+  }
+}
