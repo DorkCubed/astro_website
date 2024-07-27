@@ -19,8 +19,8 @@ function Projects() {
                     <Outlet />
                     <div className="title-container">
                         <Cards Name="PROJECTS" Class="a" Image={placeholder} NextPage="" />
-                        <Cards Name="ZENITH" Class="b" Image={placeholder} NextPage="zenith" />
-                        <Cards Name="JWST IMAGE PROCESSING" Class="c" Image={placeholder} NextPage="jwst_image_processing" />
+                        <Cards Name="ZENITH" Class="b" Image="/projects/zenith_bg.png" NextPage="zenith" />
+                        <Cards Name="JWST IMAGE PROCESSING" Class="c" Image="/projects/jwst_bg.png" NextPage="jwst_image_processing" />
                         <Cards Name="COMING SOON..." Class="d" Image={placeholder} NextPage="" />
                     </div>
                 </div>

@@ -1,4 +1,7 @@
 import "../../pages/projects.css";
+import JWST1 from "/projects/jwst1.png"
+import JWST2 from "/projects/jwst2.png"
+
 
 function JWST() {
     const text: string[] = ["During the first semester of the academic year 2023-2024, our projects team did a project on processing and visualization of jwst data.",
@@ -13,10 +16,10 @@ function JWST() {
         <div style={{ width: "100%", height: "100%", flexShrink: "0" }}>
             <h1 style={{ width: "100%", textAlign: "center" }}>JWST IMAGE PROCESSING</h1>
             <div className="project-info">
-                <p>{text[0]}</p>
-                <p>{text[1]}</p>
-                <p>{text[2]}</p>
-                <p>{text[3]}</p>
+                <p>{text[0]}<br />{text[1]}</p>
+                <p>{text[2]}<br />{text[3]}</p>
+                <img src={JWST1} />
+                <img src={JWST2} />
             </div >
         </div >
     );

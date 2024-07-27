@@ -24,7 +24,7 @@
     font-size: 5vmax;
     font-weight: bold;
     text-align: center;
-    text-shadow: 0.3vmax 0px 1vmax cornsilk, -0.3vmax 0px 1vmax cyan;
+    text-shadow: 0.3vmax 0px 1vmax cornsilk, -0.15vmax 0px 1vmax cyan;
 
     h2 {
       padding: 5vmax;
@@ -38,6 +38,8 @@
       justify-items: center;
 
       h1 {
+        position: relative;
+        z-index: 1;
         grid-row-start: 1;
         grid-column-start: 1;
         font-size: 15vmax;
@@ -46,6 +48,8 @@
       }
 
       i {
+        position: relative;
+        z-index: 0;
         grid-row-start: 1;
         grid-column-start: 1;
         font-size: 5vmax;
@@ -57,10 +61,12 @@
     .error-box:hover {
       h1 {
         opacity: 0;
+        z-index: 0;
       }
 
       i {
         opacity: 1;
+        z-index: 1;
       }
     }
   }

@@ -1,4 +1,4 @@
-import clubPhoto from '/not-not-blank.png';
+import clubPhoto from '/about/club-photo.jpg';
 
 function ClubPhoto() {
     return (
