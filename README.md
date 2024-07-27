@@ -29,14 +29,14 @@ npm run dev
 
 Your very own version of the website should now be accessible at `http://localhost:5173/`!
 
-- build the website with
+- Build the website with
 
 ```
 npm run build
 ```
 
-- you now have the build ready at `./dist`
-- preview it with
+- You now have the build ready at `./dist`
+- Preview it with
 
 ```
 npm run preview
