@@ -1,0 +1,38 @@
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  backdrop-filter: blur(5vw);
+  -webkit-backdrop-filter: blur(5vw);
+
+  .loader-screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 80vw;
+
+    p {
+      font-family: "Bruno Ace";
+      font-size: 2vmax;
+      font-weight: bold;
+      color: white;
+    }
+
+    .spinner-border {
+      margin-bottom: 1rem;
+      width: 2vmax;
+      height: 2vmax;
+      color: white;
+      margin-right: 1vmax;
+    }
+  }
+}

@@ -2,11 +2,14 @@ import Nav from '../components/Nav';
 import { Helmet } from 'react-helmet';
 import InfoCard from '../components/fest-events/infocard';
 import './fest-events.css';
+import Loader from './Loader';
 
 
 function FestEvents() {
     return (
         <>
+            <Loader />
+
             <Helmet>
                 <title>Fest Events</title>
             </Helmet>

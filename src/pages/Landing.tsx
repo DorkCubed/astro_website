@@ -3,11 +3,14 @@ import Geminid from "../components/landing/Geminid";
 import Stars from "../components/landing/Stars";
 import Nav from "../components/Nav";
 import { Helmet } from 'react-helmet';
+import Loader from "./Loader";
 import './landing.css';
 
 function Landing() {
     return (
         <>
+            <Loader />
+
             <Helmet>
                 <title>Astro Club Welcomes You</title>
             </Helmet>

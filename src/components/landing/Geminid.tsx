@@ -17,7 +17,6 @@ function Geminid() {
 
     return (
         <>
-            {console.log(angle)}
             <div className='geminid' style={{ rotate: `-${angle}rad` }}>
                 <div className='geminid_head'></div>
                 <div className='geminid_tail'></div>

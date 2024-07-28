@@ -3,12 +3,15 @@ import Nav from "../components/Nav";
 import Cards from "../components/projects/Cards";
 import { Outlet } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Loader from "./Loader";
 
 function Projects() {
     const placeholder = "/not-not-blank.png";
 
     return (
         <>
+            <Loader />
+
             <Helmet>
                 <title> Projects </title>
             </Helmet>

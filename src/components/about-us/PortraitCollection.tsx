@@ -6,31 +6,31 @@ interface CollenctionNumberProps {
 
 const excom = (
     <>
-        <Picture src="/not-not-blank.png" alt="Portrait 1" name="guy" subtitle="guy guy" clicklink="https://google.com" />
-        <Picture src="/not-not-blank.png" alt="Portrait 2" name="a guy" subtitle="not the guy" clicklink="https://google.com" />
-        <Picture src="/not-not-blank.png" alt="Portrait 3" name="gay guy" subtitle="super long gay guy loving guy" clicklink="https://google.com" />
-        <Picture src="/not-not-blank.png" alt="Portrait 4" name="the guy" subtitle="not just a guy" clicklink="https://google.com" />
+        <Picture src="/about/photos/Abhijith.jpg" alt="Abhijith Seshadri" name="Abhijith Seshadri" subtitle="President" clicklink="https://www.linkedin.com/in/abhijith-seshadri-326a14207/" />
+        <Picture src="/about/photos/Parag.jpg" alt="Parag Jiwtani" name="Parag Jiwtani" subtitle="Secretary" clicklink="https://www.linkedin.com/in/parag-jiwtani-00a4a118a/" />
+        <Picture src="/about/photos/Abhi.jpg" alt="Abhi Kumar" name="Abhi Kumar" subtitle="Oasis Coordinator" clicklink="/404" />
+        <Picture src="/about/photos/Utkarsh.jpg" alt="Utkarsh Dutta" name="Utkarsh Dutta" subtitle="Apogee Coordinator" clicklink="https://www.linkedin.com/in/utkarsh-dutta-28239625a/" />
     </>
 )
 
 const extended_excom = (
     <>
-        <Picture src="/not-not-blank.png" alt="Portrait 5" name="not guy" subtitle="women amirite chat" clicklink="https://google.com" />
-        <Picture src="/not-not-blank.png" alt="Portrait 6" name="look a guy!" subtitle="surpsrise surprise" clicklink="https://google.com" />
-        <Picture src="/not-not-blank.png" alt="Portrait 7" name="erm guy" subtitle="erm like um yeah" clicklink="https://google.com" />
+        <Picture src="/about/photos/Neerav.jpg" alt="Neerav Krishna" name="Neerav Krishna" subtitle="Chief Editor" clicklink="https://www.linkedin.com/in/neeravkrishna/" />
+        <Picture src="/about/photos/Kunal.jpg" alt="Kunal Verma" name="Kunal Verma" subtitle="Joint Coordinator" clicklink="https://www.linkedin.com/in/keshav-johri-1a79661b7/" />
+        <Picture src="/about/photos/Mantra.jpg" alt="Mantra Mehta" name="Mantra Mehta" subtitle="Projects Lead" clicklink="/404" />
     </>
 );
 
 const devs = (
     <>
-        <Picture src="/not-not-blank.png" alt="Portrait 1" name="dev 1" subtitle="did things" clicklink="https://google.com" />
-        <Picture src="/not-not-blank.png" alt="Portrait 2" name="dev 2" subtitle="did things" clicklink="https://google.com" />
-        <Picture src="/not-not-blank.png" alt="Portrait 3" name="dev 3" subtitle="did things" clicklink="https://google.com" />
-        <Picture src="/not-not-blank.png" alt="Portrait 4" name="dev 4" subtitle="did things" clicklink="https://google.com" />
-        <Picture src="/not-not-blank.png" alt="Portrait 5" name="dev 5" subtitle="did things" clicklink="https://google.com" />
-        <Picture src="/not-not-blank.png" alt="Portrait 6" name="dev 6" subtitle="did things" clicklink="https://google.com" />
-        <Picture src="/not-not-blank.png" alt="Portrait 7" name="dev 7" subtitle="did things" clicklink="https://google.com" />
-        <Picture src="/not-not-blank.png" alt="Portrait 8" name="dev 8" subtitle="did things" clicklink="https://google.com" />
+        <Picture src="/about/photos/Aditi.jpg" alt="Aditi Kamal" name="Aditi Kamal" subtitle="Design" clicklink="/404" />
+        <Picture src="/about/photos/Anoushka.jpg" alt="Anoushka Vatsa" name="Anoushka Vatsa" subtitle="Design" clicklink="https://www.linkedin.com/in/anoushka-vatsa-410678223/" />
+        <Picture src="/about/photos/Kunal.jpg" alt="Kunal Verma" name="Kunal Verma" subtitle="Design" clicklink="https://www.linkedin.com/in/kunal-verma-b3174427a/" />
+        <Picture src="/about/photos/Neerav.jpg" alt="Neerav Krishna" name="Neerav Krishna" subtitle="Design" clicklink="https://www.linkedin.com/in/neeravkrishna/" />
+        <Picture src="/about/photos/Arnav.jpg" alt="Arnav Garg" name="Arnav Garg" subtitle="Frontend" clicklink="https://www.linkedin.com/in/dorkcubed/" />
+        <Picture src="/not-not-blank.png" alt="Darshil Chauhan" name="Darshil Chauhan" subtitle="Frontend" clicklink="https://www.linkedin.com/in/darshil-chauhan-7354362b1/" />
+        <Picture src="/not-not-blank.png" alt="Neeharika Maram" name="Neeharika Maram" subtitle="Frontend" clicklink="/404" />
+        <Picture src="/about/photos/Keshav.jpg" alt="Keshav Johri" name="Keshav Johri" subtitle="Frontend + Design" clicklink="https://www.linkedin.com/in/keshav-johri-1a79661b7/" />
     </>
 );
 

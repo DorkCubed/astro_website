@@ -4,12 +4,15 @@ import BottomBar from "../components/BottomBar";
 import Nav from "../components/Nav";
 import "./about-us.css";
 import { Helmet } from "react-helmet";
+import Loader from "./Loader";
 
 const ClubDesc = "Greetings from Astro Club - we are a group of students united by our passion for astronomy, astrophysics, and all that lies above the Karman Line. We marvel at the cosmos, guided by our telescopes on the FD-III terrace, where we engage in discussions of celestial sciences, and sometimes witchcraft and cinema."
 
 function AboutUs() {
   return (
     <>
+      <Loader />
+
       <Helmet>
         <title>About Us</title>
       </Helmet>

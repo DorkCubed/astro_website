@@ -1,10 +1,13 @@
 import "./blogs.css"
 import Nav from "../components/Nav";
 import { Helmet } from "react-helmet";
+import Loader from "./Loader";
 
 function Blogs() {
   return (
     <>
+      <Loader />
+
       <Helmet>
         <title>Blogs</title>
       </Helmet>
