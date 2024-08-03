@@ -21,10 +21,10 @@
     margin: 1.5vw;
 }
 .next {
-    background-image: url(./assets/rightbutton.png);
+    background-image: url(./assets/Frame\ 5.png);
 }
 .back {
-    background-image: url(./assets/leftbutton.png);
+    background-image: url(./assets/Frame\ 4.png);
 }
 .next,.back {
     width: 6vw;

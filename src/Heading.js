@@ -5,6 +5,7 @@ function Heading() {
     return(
         <>
         <div className='heading'>
+            <div className='background'></div>
             <div className='heading1'>
                 GALLERY
             </div>
