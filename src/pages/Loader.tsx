@@ -35,12 +35,7 @@ function Loader() {
         function handleLoad() {
             setIsLoading(false);
         }
-
-        window.addEventListener("load", function () {
-            setTimeout(handleLoad, 2000);
-        });
-
-        return () => window.removeEventListener("load", handleLoad);
+        setTimeout(handleLoad, 2000);
 
     });
 
