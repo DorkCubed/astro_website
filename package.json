@@ -1,7 +1,6 @@
 {
   "name": "astro-website",
   "private": false,
-  "homepage": "https://dorkcubed.github.io/astro_website/",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
