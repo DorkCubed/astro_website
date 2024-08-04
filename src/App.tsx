@@ -6,7 +6,9 @@ import FestEvents from "./pages/FestEvents.tsx";
 import Projects from "./pages/Projects.tsx";
 import Zenith from "./components/projects/Zenith";
 import JWST from "./components/projects/JWST.tsx";
+import Gallery from "./pages/Gallery.tsx";
 import ErrorPage from "./pages/ErrorPage.tsx";
+
 
 const router = createBrowserRouter([
     {
@@ -22,6 +24,7 @@ const router = createBrowserRouter([
         ]
     },
     { path: "/blogs", element: <Blogs /> },
+    { path: "/gallery", element: <Gallery /> },
     { path: "/events", element: <FestEvents /> },
 ]);
 

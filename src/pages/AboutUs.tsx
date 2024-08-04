@@ -24,9 +24,9 @@ function AboutUs() {
         <div className="club-description">
           <p> {ClubDesc} </p>
         </div>
-        <h1 className="gallery-title">EXECUTIVE COMITEE 24-25</h1>
+        <h1 className="gallery-title">EXECUTIVE COMMITEE 24-25</h1>
         <PortraitCollection number={1} />
-        <h1 className="gallery-title">EXTENDED EXECUTIVE COMITEE 24-25</h1>
+        <h1 className="gallery-title">EXTENDED EXECUTIVE COMMITEE 24-25</h1>
         <PortraitCollection number={2} />
         <h1 className="gallery-title">MEET THE DEVS</h1>
         <PortraitCollection number={3} />

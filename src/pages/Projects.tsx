@@ -13,7 +13,7 @@ function Projects() {
             <Loader />
 
             <Helmet>
-                <title> Projects </title>
+                <title>Projects</title>
             </Helmet>
 
             <div className="projects">

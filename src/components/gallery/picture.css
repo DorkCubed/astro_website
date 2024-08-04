@@ -1,0 +1,37 @@
+.picture-container {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: astro_font;
+  color: white;
+
+  .picture {
+    width: 100%;
+    background-color: grey;
+    text-align: center;
+    height: 17vw;
+    overflow: hidden;
+  }
+  .picture img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .tilt {
+    background-color: grey;
+  }
+}
+@media (2/3 < aspect-ratio < 1) {
+  .picture-container {
+    .picture {
+      height: 25vmax;
+    }
+  }
+}
+
+@media (aspect-ratio < 2/3) {
+  .picture-container {
+    .picture {
+      height: 30vmax;
+    }
+  }
+}

@@ -45,14 +45,17 @@
   }
 
   .club-description p {
-    color: black;
-    text-shadow: 0.1vw 0.1vw 0.1vw white, -0.1vw 0.1vw 0.1vw white,
-      0.1vw -0.1vw 0.1vw white, -0.1vw -0.1vw 0.1vw white;
+    font-family: "Assistant";
+    font-weight: lighter;
+    color: white;
+    text-shadow: 0.1vmax 0.1vmax 0px black, -0.1vmax 0.1vmax 0px black,
+      0.1vmax -0.1vmax 0px black, -0.1vmax -0.1vmax 0px black;
   }
 
   .gallery-title {
     font-size: 4vw;
-    text-shadow: 0.5vw 0px 0px black;
+    text-shadow: 0.2vw 0.2vw 2px black, -0.2vw -0.2vw 2px black,
+      -0.2vw 0.2vw 2px black, 0.2vw -0.2vw 2px black;
     padding-top: 4vh;
     margin-left: 5vw;
     margin-right: 5vw;
