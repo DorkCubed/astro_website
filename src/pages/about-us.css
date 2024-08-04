@@ -114,3 +114,15 @@
     justify-content: center;
   }
 }
+
+@media (orientation: portrait) {
+  .about-us {
+    .potrait-text-container {
+      h3 {
+        font-size: 2.5vw;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
