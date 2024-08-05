@@ -36,7 +36,9 @@ function Loader() {
             const handler = () => {
                 setIsLoading(false);
             };
-            window.addEventListener('load', handler);
+            window.addEventListener('load', function () {
+                setTimeout(handler, 500);
+            });
 
             return () => {
                 window.removeEventListener('load', handler);
