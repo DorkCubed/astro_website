@@ -32,17 +32,23 @@ function Loader() {
 
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
-        function handleLoad() {
-            setIsLoading(false);
+        if (document.readyState !== 'complete') {
+            const handler = () => {
+                setIsLoading(false);
+            };
+            window.addEventListener('load', handler);
+
+            return () => {
+                window.removeEventListener('load', handler);
+            };
+        } else {
+            const timeout = window.setTimeout(() => {
+                setIsLoading(false);
+            }, 2000);
+            return () => window.clearTimeout(timeout);
         }
+    }, []);
 
-        window.addEventListener("load", function () {
-            setTimeout(handleLoad, 2000);
-        });
-
-        return () => window.removeEventListener("load", handleLoad);
-
-    });
 
     return (
         <>
