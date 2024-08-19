@@ -8,6 +8,7 @@ import Zenith from "./components/projects/Zenith";
 import JWST from "./components/projects/JWST.tsx";
 import Gallery from "./pages/Gallery.tsx";
 import ErrorPage from "./pages/ErrorPage.tsx";
+import { Helmet } from "react-helmet";
 
 
 const router = createBrowserRouter([
@@ -30,7 +31,13 @@ const router = createBrowserRouter([
 
 function App() {
     return (
-        <RouterProvider router={router} />
+        <>
+            <Helmet>
+                <meta name="description" content="The official website for Astro Club, Bits Pilani, Pilani Campus." />
+                <meta name="keywords" content="Astro, Astronomy, Pilani, Bits Pilani, Astro Club" />
+            </Helmet>
+            <RouterProvider router={router} />
+        </>
     );
 }
 
