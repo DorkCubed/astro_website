@@ -10,6 +10,7 @@ function Blogs() {
 
       <Helmet>
         <title>Blogs</title>
+        <meta name="description" content="Our blogs - sharing our collective insight with everyone." />
       </Helmet>
 
       <div className="blogs">

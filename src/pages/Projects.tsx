@@ -14,6 +14,7 @@ function Projects() {
 
             <Helmet>
                 <title>Projects</title>
+                <meta name="description" content="Our projects and their stories, to showcase and inspire." />
             </Helmet>
 
             <div className="projects">

@@ -15,6 +15,7 @@ function AboutUs() {
 
       <Helmet>
         <title>About Us</title>
+        <meta name="description" content="Learn more about us, or contact our members." />
       </Helmet>
 
       <div className="about-us">

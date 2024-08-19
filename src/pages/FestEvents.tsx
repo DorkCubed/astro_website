@@ -12,6 +12,7 @@ function FestEvents() {
 
             <Helmet>
                 <title>Fest Events</title>
+                <meta name="description" content="Join us at Apogee or Oasis and experience our events." />
             </Helmet>
 
             <div className='fest'>
