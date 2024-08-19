@@ -10,6 +10,7 @@ function Gallery() {
         <>
             <Helmet>
                 <title>Gallery</title>
+                <meta name="description" content="Vivid memories of some of our finest moments." />
             </Helmet>
 
             <Loader />

@@ -93,7 +93,7 @@
   .portrait-learn-more {
     padding-top: 1vh;
     padding: 1vw;
-    font-size: 1vw;
+    font-size: 1vmax;
     background-color: black;
     border-radius: 2vw;
     text-align: center;
