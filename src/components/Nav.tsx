@@ -7,12 +7,12 @@ import hamburger from "/hamburger.svg";
 
 const DesktopNavBar = (
     <nav>
-        <a><Link reloadDocument={true} to={'/'}><img src={astro_logo} alt="sky" /></Link></a>
-        <a><Link reloadDocument={true} to={'/about'}>ABOUT US</Link></a>
-        <a><Link reloadDocument={true} to={'/projects'}>PROJECTS</Link></a>
-        <a><Link reloadDocument={true} to={'/blogs'}>BLOGS</Link></a>
-        <a><Link reloadDocument={true} to={'/gallery'}>GALLERY</Link></a>
-        <a><Link reloadDocument={true} to={'/events'}>FEST EVENTS</Link></a>
+        <a href='/'><img src={astro_logo} alt="sky" /></a>
+        <a href='/about'>ABOUT US</a>
+        <a href='/projects'>PROJECTS</a>
+        <a href='/blogs'>BLOGS</a>
+        <a href='/gallery'>GALLERY</a>
+        <a href='/events'>FEST EVENTS</a>
     </nav>
 )
 
@@ -59,11 +59,11 @@ function Nav() {
                     style={floatingStyles}
                     {...getFloatingProps()}>
                     <div className="manchor mnav" style={{ ...styles }}>
-                        <a><Link reloadDocument={true} to={'/about'}>ABOUT US</Link></a>
-                        <a><Link reloadDocument={true} to={'/projects'}>PROJECTS</Link></a>
-                        <a><Link reloadDocument={true} to={'/blogs'}>BLOGS</Link></a>
-                        <a><Link reloadDocument={true} to={'/gallery'}>GALLERY</Link></a>
-                        <a><Link reloadDocument={true} to={'/events'}>FEST EVENTS</Link></a>
+                        <a href='/about'>ABOUT US</a>
+                        <a href='/projects'>PROJECTS</a>
+                        <a href='/blogs'>BLOGS</a>
+                        <a href='/gallery'>GALLERY</a>
+                        <a href='/events'>FEST EVENTS</a>
                     </div>
                 </nav>
             }
