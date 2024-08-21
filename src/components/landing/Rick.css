@@ -1,0 +1,36 @@
+.rick-button {
+  position: absolute;
+  bottom: 3vmin;
+  right: 3vmin;
+  height: 8vmin;
+  width: 8vmin;
+  z-index: 10;
+  text-align: center;
+  font-size: 4vmin;
+  transition: 100ms;
+
+  .rocket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #207491;
+    border-radius: 20%;
+    height: 100%;
+    width: 100%;
+  }
+
+  iframe {
+    position: absolute;
+    bottom: 3vmin;
+    right: 3vmin;
+    height: 25vmin;
+    width: 20vmax;
+  }
+}
+
+.rick-button:hover {
+  .rocket {
+    box-shadow: 0 0 1vmin #48b1d4;
+    cursor: pointer;
+  }
+}
