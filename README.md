@@ -2,7 +2,7 @@
 
 ## Greetings from the Astro Club!
 
-This repository hosts the code for the website, which can be accessed by clicking [here](https://google.com)
+This repository hosts the code for the website, which can be accessed by clicking [here](http://astroclubbitsp.com/)
 
 ## Build Tools -
 
